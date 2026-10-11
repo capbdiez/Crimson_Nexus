@@ -1,0 +1,50 @@
+# ARCHITECTURE - CRIMSON NEXUS
+
+## Major Subsystems
+
+### 1. Core Game Engine
+**Purpose**: Main gameplay loop, physics simulation, rendering pipeline
+**Ownership**: Game Systems Team
+**Public Interfaces**: GameState, PhysicsEngine, RenderPipeline
+**Private Components**: GameLoop, EntityComponentSystem
+
+### 2. World Management System
+**Purpose**: Open world navigation, environment loading, spatial partitioning
+**Ownership**: World Design Team
+**Public Interfaces**: WorldManager, AreaLoader, NavigationSystem
+**Private Components**: TerrainManager, WeatherSystem, TimeSystem
+
+### 3. Character & Combat System
+**Purpose**: Player control, AI behavior, combat mechanics, animations
+**Ownership**: Combat Systems Team
+**Public Interfaces**: PlayerController, CombatSystem, AIBrain
+**Private Components**: AnimationController, DamageCalculator, StatusEffectSystem
+### 4. Player Progression System
+    | **Purpose**: Attribute progression, dynamic class assignment, stat management, skill system integration
+    | **Ownership**: Progression Systems Team
+    | **Public Interfaces**: ProgressionSystem, ClassAssigner, StatCalculator
+    | **Private Components**: AttributeManager, ClassAnalyzer, SkillTreeManager
+
+### 6. Magic & Ability System
+    ### 5. Magic & Ability System
+
+### 4. Magic & Ability System
+**Purpose**: Spellcasting, magical effects, mana management, visualization
+**Ownership**: Magic Systems Team
+### 7. Inventory & Crafting System
+**Public Interfaces**: MagicSystem, SpellManager, EffectRenderer
+**Private Components**: Elementals, ManaPool, ParticleSystemController
+### 7. Inventory & Crafting System
+
+### 5. Inventory & Crafting System
+**Purpose**: Item management, crafting recipes, equipment, trading
+**Ownership**: Progression Systems Team
+**Public Interfaces**: InventoryManager, CraftSystem, EquipmentSystem
+### 8. Dungeon & Difficulty System
+**Private Components**: ItemDatabase, RecipeManager, CurrencySystem
+
+### 6. Dungeon & Difficulty System
+**Purpose**: Portal mechanics, rank-based enemy spawning, difficulty scaling, dungeon progression
+**Ownership**: Combat Systems Team
+### 9. Quest & Narrative System
+**Public Interfaces**: PortalSystem, DungeonManager, RankSystem
