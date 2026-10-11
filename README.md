@@ -32,13 +32,19 @@ Crimson Nexus is a handcrafted real-time Action Role-Playing Game (ARPG) that im
 - Dungeon & Difficulty System with rank-based portal mechanics
 
 ### Technical Specifications
-- Real-time 60 FPS on modern hardware
-- **2D Pixel Art Style**: Hand-drawn pixel graphics with nostalgic charm
-- Dynamic lighting and atmospheric effects
-- Comprehensive accessibility features
-- Cloud and local save systems
-- Mod support for community content
-- Remote play with cross-save functionality
+- Real-time 60 FPS on modern hardware with Godot Engine
+- **2D Pixel Art Style**: Hand-drawn pixel graphics using Godot's Sprite2D and AnimatedSprite nodes
+- Dynamic lighting and atmospheric effects with Godot's CanvasItem and LightingEngine
+- Comprehensive accessibility features with Godot UI system
+- Cloud and local save systems with Godot's FileSystem and Network API
+- **Mod Support**: Godot package system and project structure for community content
+- Remote play with cross-save functionality using Godot's networking capabilities
+
+### Godot Development Platform
+- **Primary Platform**: Godot Engine (version TBD)
+- **Export Targets**: Windows, macOS, Linux, Web (WebAssembly), Android, iOS
+- **Development Tools**: Godot IDE, GDScript editor, Godot Asset Library
+- **Project Structure**: Godot project folder with .godot, project.godot, and res://, src:// directories
 
 ## Development Pipeline
 - Core gameplay development (Months 1-2)
@@ -47,16 +53,25 @@ Crimson Nexus is a handcrafted real-time Action Role-Playing Game (ARPG) that im
 - Release preparation (Month 6)
 
 ## Architecture
-The game features a modular architecture with 12 major subsystems:
-1. Core Game Engine
-2. World Management System
-3. Character & Combat System
-4. **Player Progression System**
-5. Magic & Ability System
-6. Inventory & Crafting System
-7. Dungeon & Difficulty System
-8. Quest & Narrative System
-9. UI & HUD System
-10. Save & Data Management System
-11. Audio & Visual Effects System
-12. Networking & Multi-Tenancy System
+The game features a modular architecture with Godot's scene-based approach:
+
+### Core Architecture Components
+1. **Core Game Engine** - Godot Engine integration and game loop management
+2. **World Management System** - Godot scene management and environment loading
+3. **Character & Combat System** - Godot Node-based character controller and combat mechanics
+4. **Player Progression System** - Attribute management and dynamic class assignment
+5. **Magic & Ability System** - Godot spell casting and magical effects
+6. **Inventory & Crafting System** - Godot item system and crafting recipes
+7. **Dungeon & Difficulty System** - Portal mechanics and rank-based enemy spawning
+8. **Quest & Narrative System** - Godot dialogue system and story progression
+9. **UI & HUD System** - Godot user interface and heads-up display
+10. **Save & Data Management System** - Godot save system and cloud synchronization
+11. **Audio & Visual Effects System** - Godot sound design and visual effects
+12. **Networking & Multi-Tenancy System** - Godot networking and multiplayer support
+
+### Godot-Specific Architecture Features
+- **Scene-Based**: Godot's hierarchical scene management
+- **Node-Based**: Godot Node2D and Sprite2D components
+- **Resource-Based**: Godot resource system for assets
+- **Signal-Based**: GDScript signals for communication
+- **Export-Based**: Godot export templates for platforms

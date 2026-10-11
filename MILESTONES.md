@@ -29,14 +29,14 @@ This document outlines the incremental development milestones for Crimson Nexus,
 - [ ] Save/load system works reliably
 - [ ] All three biomes are explorable and functional
 - [ ] Tutorial guides player through basic mechanics
-- [ ] Performance meets minimum requirements (30 FPS on target hardware)
+- [ ] Performance meets minimum requirements (30 FPS on target hardware with Godot Engine)
 
 ### Testing Requirements
-- **Unit Tests**: Core systems functionality
-- **Integration Tests**: System interactions and data flow
-- **Usability Testing**: Player onboarding and tutorial effectiveness
-- **Performance Testing**: Frame rate consistency and memory usage
-- **Bug Testing**: Critical bugs in core gameplay systems
+- **Unit Tests**: Core systems functionality with Godot Unit Test framework
+- **Integration Tests**: System interactions and data flow using Godot's scene system
+- **Usability Testing**: Player onboarding and tutorial effectiveness with Godot UI
+- **Performance Testing**: Frame rate consistency and memory usage with Godot's built-in profiler
+- **Bug Testing**: Critical bugs in core gameplay systems with Godot debugging tools
 
 ### Definition of Done
 - All core features implemented and working
@@ -72,17 +72,17 @@ This document outlines the incremental development milestones for Crimson Nexus,
 - [ ] Crafting system supports basic item synthesis
 - [ ] Visual effects enhance gameplay without performance impact
 - [ ] Player feedback loop provides satisfaction and progression
-- [ ] Performance improved to 45+ FPS on target hardware
+- [ ] Performance improved to 45+ FPS on target hardware with Godot Engine
 - [ ] Dungeon system implemented with rank-based enemy waves
 - [ ] Blue portal system functional (escape on demand, experience-only losses)
 - [ ] Red portal system functional (sealed dungeons, boss fights, permanent skill loss on death)
 
 ### Testing Requirements
-- **Unit Tests**: New systems and feature interactions
-- **Integration Tests**: Combat and crafting system integration
-- **Performance Testing**: Enhanced effects and asset optimization
-- **Balance Testing**: Difficulty curve and enemy behavior
-- **Content Testing**: Variety and quality of new content
+- **Unit Tests**: New systems and feature interactions with Godot Unit Test framework
+- **Integration Tests**: Combat and crafting system integration using Godot's scene system
+- **Performance Testing**: Enhanced effects and asset optimization with Godot profiler
+- **Balance Testing**: Difficulty curve and enemy behavior with Godot's animation and physics systems
+- **Content Testing**: Variety and quality of new content with Godot Asset Library
 - **Dungeon Testing**: Portal mechanics, rank scaling, and failure scenarios
 - **Stress Testing**: Red portal extreme difficulty scenarios
 
@@ -167,11 +167,11 @@ This document outlines the incremental development milestones for Crimson Nexus,
 - [ ] Post-launch support plan established
 
 ### Testing Requirements
-- **Load Testing**: Server capacity and performance under stress
-- **Marketing Testing**: Promotional materials and campaign effectiveness
-- **Analytics Testing**: Data accuracy and reporting reliability
-- **Update Testing**: Content delivery and installation processes
-- **Production Testing**: Real-world launch conditions
+- **Load Testing**: Server capacity and performance under stress with Godot networking
+- **Marketing Testing**: Promotional materials and campaign effectiveness with Godot analytics
+- **Analytics Testing**: Data accuracy and reporting reliability using Godot's built-in analytics
+- **Update Testing**: Content delivery and installation processes with Godot package management
+- **Production Testing**: Real-world launch conditions with Godot export and deployment
 
 ### Definition of Done
 - All preparation features implemented
@@ -206,11 +206,11 @@ This document outlines the incremental development milestones for Crimson Nexus,
 - [ ] Player retention exceeding expectations
 
 ### Testing Requirements
-- **Real-World Testing**: Live player feedback and experience
-- **Performance Monitoring**: Continuous monitoring and optimization
-- **Content Testing**: Post-launch content effectiveness
-- **Community Engagement**: Player interaction and feedback loops
-- **Business Metrics**: Revenue and user acquisition analysis
+- **Real-World Testing**: Live player feedback and experience with Godot analytics
+- **Performance Monitoring**: Continuous monitoring and optimization using Godot's built-in profiler
+- **Content Testing**: Post-launch content effectiveness with Godot Asset Library
+- **Community Engagement**: Player interaction and feedback loops with Godot networking
+- **Business Metrics**: Revenue and user acquisition analysis with Godot analytics tools
 
 ### Definition of Done
 - Successful commercial launch completed

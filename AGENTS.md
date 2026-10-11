@@ -10,17 +10,24 @@
 - **Documentation**: Include comprehensive comments and docstrings
 
 ### Language-Specific Standards
-**C++/C#**
+**C++/C#** (reference only)
 - Use consistent brace placement and indentation
 - Prefer RAII for resource management
 - Use smart pointers where appropriate
 - Implement proper copy/move semantics
 
-**JavaScript/TypeScript**
-- Use const/let appropriately
-- Follow arrow function conventions
-- Implement proper ES6+ features
-- Use async/await for asynchronous operations
+**GDScript (Primary Development Language)**
+- Use const and var appropriately
+- Follow GDScript naming conventions (snake_case)
+- Implement proper GDScript features (signals, resources, scenes)
+- Use @onready and @onready for node initialization
+- Leverage Godot's built-in GDScript optimizations
+
+**Godot Engine Standards**
+- Follow Godot's scene hierarchy best practices
+- Proper use of Node2D, Sprite2D, and other Godot nodes
+- Resource management with Godot's resource system
+- Animation management with Godot AnimationPlayer
 
 ### Code Review
 - Peer reviews for all production code changes
@@ -68,11 +75,62 @@
 - **End-to-End Tests**: Complete dungeon runs from portal to boss defeat
 - **Stress Tests**: Red portal extreme difficulty scenarios and failure conditions
 
+### Godot-Specific Standards
+**Scene System Standards**
+- Follow Godot's scene hierarchy best practices
+- Proper use of Node2D, Sprite2D, and other Godot nodes
+- Resource management with Godot's resource system
+- Animation management with Godot AnimationPlayer
+
+**GDScript Standards**
+- Use @onready and @onready for node references
+- Implement proper GDScript signals for communication
+- Leverage Godot's built-in methods and properties
+- Optimize GDScript performance with local variables
+
+### Godot Testing Strategy
+**Godot Unit Testing**
+- Automated testing with Godot Unit Test framework
+- Scene-based testing for UI and gameplay
+- Performance testing with Godot's built-in profiler
+- Integration testing for GDScript and native modules
+
+**Manual Testing**
+- Human verification of user experience
+- Godot-specific testing for touch controls
+- Cross-platform testing for desktop/mobile
+- Web browser compatibility testing
+
 ### Testing Standards
 - Write testable code with clear interfaces
 - Mock external dependencies for isolated testing
 - Use consistent test naming and organization
 - Document test cases and expected outcomes
+
+## Godot Development Pipeline
+
+### Package Management
+- npm/yarn dependency management for Godot modules
+- Godot Asset Library integration
+- Version control with GitHub Actions for CI/CD
+
+### Build Tools
+- Godot Engine command-line build system
+- Texture compression and optimization tools
+- Export templates for multiple platforms
+- Automated build scripts for continuous integration
+
+### Deployment Strategy
+- CI/CD pipeline for Godot applications
+- Web deployment options (WebAssembly, native)
+- Mobile deployment (Android, iOS export)
+- Desktop deployment (Windows, macOS, Linux export)
+
+### Performance Optimization
+- Godot's built-in performance profiler
+- Texture atlas and texture packing
+- Animation optimization with Godot AnimationPlayer
+- Physics performance tuning with Godot physics engine
 
 ## Scope-Control Rules
 

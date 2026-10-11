@@ -2,11 +2,11 @@
 
 ## Major Subsystems
 
-### 1. Core Game Engine
+### 1. Core Game Engine (Godot Implementation)
 | **Purpose**: Main gameplay loop, physics simulation, rendering pipeline
 | **Ownership**: Game Systems Team
 | **Public Interfaces**: GameState, PhysicsEngine, RenderPipeline
-| **Private Components**: GameLoop, EntityComponentSystem
+| **Private Components**: GameLoop, SceneSystem, ResourceManager
 
 ### 2. World Management System
 | **Purpose**: Open world navigation, environment loading, spatial partitioning
@@ -98,6 +98,26 @@
 | **Public Interfaces**: NetworkManager, LobbySystem, Matchmaker
 | **Private Components**: PacketHandler, ConnectionManager, SecurityLayer
 
+### Godot-Specific Implementation Features
+
+#### Scene System
+| **Purpose**: Hierarchical scene management and organization
+| **Ownership**: Scene Management Team
+| **Public Interfaces**: SceneTree, ResourceLoader, SceneInstancer
+| **Private Components**: AnimationPlayer, MeshInstance, CollisionShape
+
+#### Node System
+| **Purpose**: Game object hierarchy and component system
+| **Ownership**: Core Systems Team
+| **Public Interfaces**: Node2D, Sprite2D, CollisionObject2D
+| **Private Components**: AnimatedSprite, TileMap, ParallaxBackground
+
+#### Resource Management
+| **Purpose**: Asset loading, management, and optimization
+| **Ownership**: Resource Management Team
+| **Public Interfaces**: ResourceLoader, DynamicFont, StreamTexture
+| **Private Components**: TexturePacker, AnimationLibrary, AudioStream
+
 ## Ownership Boundaries
 
 ### Team-Owned Systems
@@ -111,3 +131,10 @@
 | - **Data Management Team**: Saves, clouds, player data
 | - **Audio/Visual Team**: Sound, music, visual effects
 | - **Network Engineering Team**: Online features, multiplayer
+
+### Godot Team Support
+| - **Godot Integration Team**: Godot Engine integration and optimization
+| - **GDScript Team**: GDScript implementation and performance tuning
+| - **Asset Management Team**: Godot resource and asset management
+| - **Scene Management Team**: Godot scene system implementation
+| - **Export Team**: Godot export templates and platform support
